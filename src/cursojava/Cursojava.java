@@ -16,6 +16,12 @@ public class Cursojava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //llamamos el primer método
+        escribir();
     }
     
+    //vamos a crear nuestro primer método para mostrar información
+    public static void escribir() {
+        System.out.println("Esto es un mensaje en pantalla");
+    }
 }
