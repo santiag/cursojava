@@ -1,27 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cursojava;
+
+import java.io.IOException;
 
 /**
  *
- * @author santiago
+ * @author santiaguf
  */
 public class Cursojava {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException {
         //llamamos el primer método
-        escribir();
+        saludar("usuario");
+        
+        //creamos un objeto de la clase leer y escribir para acceder a sus métodos
+        LeerEscribir io = new LeerEscribir();    
+
+        //accedemos a sus métodos y funciones
+        io.calcularEdad();
+        io.triangulo();
+        
     }
     
-    //vamos a crear nuestro primer método para mostrar información
-    public static void escribir() {
-        System.out.println("Esto es un mensaje en pantalla");
+    //vamos a crear nuestro primer método para msaludar
+    public static void saludar(String nombre){
+        System.out.println("hola "+ nombre);
     }
 }
